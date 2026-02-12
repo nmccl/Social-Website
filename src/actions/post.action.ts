@@ -4,7 +4,8 @@ import { auth } from "@clerk/nextjs/server";
 import { getDbUserId } from "./user.action";
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
-import { Prisma } from "@prisma/client";
+//import { Prisma } from "@prisma/client";
+import type { Prisma } from "@prisma/client";
 
 export async function createPost(content: string, image: string) {
     try {
